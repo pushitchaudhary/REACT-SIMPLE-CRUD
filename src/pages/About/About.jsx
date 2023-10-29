@@ -1,8 +1,10 @@
 import React from "react";
+import Navbar from "../Component/Navbar/Navbar";
 
 function About() {
   return (
     <div>
+        <Navbar/>
       <main>
         <section class="about-us">
           <h2>About Us</h2>
