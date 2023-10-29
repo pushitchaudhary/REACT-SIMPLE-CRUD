@@ -1,33 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import Navbar from './pages/Component/Navbar/Navbar'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header>
+        <h1>Stylish Blog</h1>
+    </header>
+    <Navbar/>
+    <main>
+        <article>
+            <h2>Blog Post Title</h2>
+            <p class="post-meta">Posted by <span class="author">Author</span> on <time datetime="2023-10-29">October 29, 2023</time> in <a href="#">Category</a></p>
+            <p>This is the main content of your blog post. Write an engaging and informative article here.</p>
+            <a href="#" class="read-more">Read More</a>
+        </article>
+        
+    </main>
+    <footer>
+        <p>&copy; 2023 Stylish Blog</p>
+    </footer>
     </>
   )
 }
